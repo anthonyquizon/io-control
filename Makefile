@@ -15,7 +15,7 @@ $(BUILD_JS): $(SRC_JS)
 all: $(BUILD_JS)
 
 watch: 
-	onchange 'src/**/*.*' -i -- make all
+	onchange 'src/**/*.*' 'examples/**/*.*' -i -- make all
 
 server:
 	http-server -p 4444

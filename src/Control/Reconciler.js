@@ -1,4 +1,3 @@
-const Model = require('Control/Model');
 const _ = require('mori/mori'), I = _.vector, O = _.hashMap;
 
 let queue = _.queue();
@@ -11,9 +10,7 @@ function reconcile(model0, t) {
     let model1 = _.reduce((acc, fObj) => {
         const f = _.get(fObj, 'fn');
         const data = _.get(fObj, 'data');
-        const result = f(model0, data);
-
-        return Model.assocIn(acc, result);
+        return f(model0, data);
     }, model0, queue);
 
     queue = _.queue();

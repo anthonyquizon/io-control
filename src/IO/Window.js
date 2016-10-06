@@ -3,8 +3,7 @@ const _ = require('mori/mori');
 
 function run() {
     window.addEventListener('resize', () => {
-        const path = _.toClj({ window: ['window'] });
-        Reconciler.async(path, model => {
+        Reconciler.async( model => {
             return _.assoc(model, 'window', _.toClj({
                 width: window.innerWidth,
                 height: window.innerHeight

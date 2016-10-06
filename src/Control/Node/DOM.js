@@ -4,7 +4,10 @@ const _ = require('mori/mori');
 const tags = [
     'div', 'span', 'a', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 
     'button', 'label', 'select', 'option', 'small', 'img',
-    'input', 'header', 'ul', 'li', 'hr'
+    'input', 'header', 'ul', 'li', 'hr',
+    
+    //SVG
+    'svg', 'circle'
 ];
 
 function exports() {

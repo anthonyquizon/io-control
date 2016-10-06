@@ -9,9 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browserify": "^13.1.0",
     "mori": "^0.3.2",
-    "onchange": "^3.0.2",
-    "snabbdom": "^0.5.3"
+    "snabbdom": "^0.5.3",
+    "watchify": "^3.7.0"
   }
 }

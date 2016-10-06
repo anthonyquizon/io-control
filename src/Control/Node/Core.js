@@ -9,7 +9,6 @@ function empty() {
 }
 
 function node(tag, a, b) {
-    //TODO check if formed well
     const childrenA = (typeof a === 'string') ||  Array.isArray(a) || _.isVector(a);
     const [props, children] = childrenA ? [{}, a] : [a, b];
 

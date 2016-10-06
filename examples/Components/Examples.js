@@ -2,10 +2,10 @@ const Button = require('Components/Button')
 const D = require('Control/Node/DOM');
 const _ = require('mori/mori');
 
-function render() {
+function render(model, t) {
     return D.div([
         D.div('hello'),
-        Button.render()
+        Button.render(model, t)
     ]);
 }
 

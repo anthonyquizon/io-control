@@ -7,7 +7,7 @@ const tags = [
     'input', 'header', 'ul', 'li', 'hr',
     
     //SVG
-    'svg', 'circle'
+    'svg', 'circle', 'g', 'text'
 ];
 
 function exports() {

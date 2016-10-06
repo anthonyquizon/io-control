@@ -10,11 +10,8 @@ function run(Component, initial) {
 
     (function step(model0, t, initial) {
         const model1 = Reconciler.reconcile(model0, t);
-
-        if (initial || !_.equals(model1, model0)) {
-            const dom = Component.render(model1);
-            IORenderer.run('app', dom);
-        }
+        const dom = Component.render(model1, t);
+        IORenderer.run('app', dom);
 
         requestAnimationFrame((t) => { 
             step(model1, t, false); 
